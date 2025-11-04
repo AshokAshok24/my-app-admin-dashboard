@@ -42,15 +42,15 @@ export default function Sidebar({ sidebarVisible }) {
                                     <li>
                                         <button onClick={() => toggleSubMenu("overview")} className="d-flex w-100 btn btn-sm text-white text-start">
 
-                                            <div className="label flex-grow-1">Overview</div>
+                                            <div className="label flex-grow-1">Cards</div>
                                             <div className="arrow">
                                                 <i className={`fa-solid fa-chevron-${openSubMenu === "overview" ? "down" : "right"}`}></i>
                                             </div>
                                         </button>
                                         {openSubMenu === "overview" && (
                                             <ul className="list-unstyled ps-4">
-                                                <li><Link href="/overview/summary" className="text-white">Summary</Link></li>
-                                                <li><Link href="/overview/details" className="text-white">Details</Link></li>
+                                                <li><Link href="/cards" className="text-white">Cards</Link></li>
+                                                <li><Link href="/templates" className="text-white">Templates</Link></li>
                                             </ul>
                                         )}
                                     </li>
@@ -63,8 +63,8 @@ export default function Sidebar({ sidebarVisible }) {
                                         </button>
                                         {openSubMenu === "stats" && (
                                             <ul className="list-unstyled ps-4">
-                                                <li><Link href="/stats/weekly" className="text-white">Weekly</Link></li>
-                                                <li><Link href="/stats/monthly" className="text-white">Monthly</Link></li>
+                                                <li><Link href="/cards" className="text-white">Weekly</Link></li>
+                                                <li><Link href="/templates" className="text-white">Monthly</Link></li>
                                             </ul>
                                         )}
                                     </li>
@@ -94,8 +94,8 @@ export default function Sidebar({ sidebarVisible }) {
                                         </button>
                                         {openSubMenu === "daily" && (
                                             <ul className="list-unstyled ps-4">
-                                                <li><Link href="/reports/daily/sales" className="text-white">Sales</Link></li>
-                                                <li><Link href="/reports/daily/expenses" className="text-white">Expenses</Link></li>
+                                                <li><Link href="/cards" className="text-white">Sales</Link></li>
+                                                <li><Link href="/templates" className="text-white">Expenses</Link></li>
                                             </ul>
                                         )}
                                     </li>
@@ -108,8 +108,8 @@ export default function Sidebar({ sidebarVisible }) {
                                         </button>
                                         {openSubMenu === "monthly" && (
                                             <ul className="list-unstyled ps-4">
-                                                <li><Link href="/reports/monthly/profit" className="text-white">Profit</Link></li>
-                                                <li><Link href="/reports/monthly/loss" className="text-white">Loss</Link></li>
+                                                <li><Link href="/cards" className="text-white">Profit</Link></li>
+                                                <li><Link href="/templates" className="text-white">Loss</Link></li>
                                             </ul>
                                         )}
                                     </li>
